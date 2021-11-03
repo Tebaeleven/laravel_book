@@ -79,7 +79,7 @@ use Illuminate\Support\Facades\URL;    //この行を追加
 public function boot() {
    {・・・略・・・}
    Schema::defaultStringLength(191);   //boot()内に、この行を追加
-   URL::forceScheme('https');          //boot()内に、この行を追加　//Dockerでこれを追加するとAuth認証のCSSが効かなくなるので追加しないようにする
+   URL::forceScheme('https');   //Dockerでこれを追加するとAuth認証のCSSが効かなくなるので追加しないようにする //boot()内に、この行を追加　
    {・・・略・・・}
 }
 
